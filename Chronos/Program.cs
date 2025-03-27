@@ -10,6 +10,9 @@ namespace Chronos
             Stopwatch crono1 = new Stopwatch();
             Stopwatch crono2 = new Stopwatch();
 
+            crono1.Start();
+            
+
 
         }
     }
