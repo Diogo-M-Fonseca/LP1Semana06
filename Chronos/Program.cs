@@ -18,6 +18,14 @@ namespace Chronos
 
             crono1.Stop();
             crono2.Stop();
+
+            TimeSpan cr1 = crono1.Elapsed;
+            TimeSpan cr2 = crono2.Elapsed;
+
+            Console.WriteLine($"{cr1}");
+            Console.WriteLine($"{cr2}");
+            
+            
             
 
 
