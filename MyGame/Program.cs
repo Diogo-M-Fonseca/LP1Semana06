@@ -14,6 +14,12 @@ namespace MyGame
             Console.Write($"Nome do inimigo {numOfEnemies + 1}: ");
             enemies[numOfEnemies] = new Enemy(Console.ReadLine());
             }
+
+            foreach (Enemy newEnemy in enemies)
+             {
+                Console.WriteLine(newEnemy.GetName(), newEnemy.GetHealth(), newEnemy.GetShield());
+ 
+             }
         }
     }
 }
