@@ -17,6 +17,7 @@ namespace MyGame
 
             foreach (Enemy newEnemy in enemies)
              {
+                newEnemy.PickupPowerUp(PowerUp.shield, 30);
                 Console.WriteLine($"{newEnemy.GetName()} {newEnemy.GetHealth()} {newEnemy.GetShield()}");
  
              }
