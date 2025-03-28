@@ -7,6 +7,7 @@ namespace MyGame
         private string name;
         private float health;
         private float shield;
+        static int powerupGotten;
 
        public Enemy(string name)
        {
@@ -63,6 +64,8 @@ namespace MyGame
                     shield = 100;
 
             }
+            powerupGotten++;
         }
+        internal static int GetPowerUpsGotten() => powerupGotten;
     }
 }
