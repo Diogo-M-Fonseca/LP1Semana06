@@ -56,6 +56,13 @@ namespace MyGame
                     health = 100;
 
             }
+            else if (powerUp == PowerUp.shield)
+            {
+                shield += 100;
+                if (shield > 100)
+                    shield = 100;
+
+            }
         }
     }
 }
