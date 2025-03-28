@@ -29,5 +29,17 @@ namespace MyGame
             if (health < 0) health = 0;
         }
        }
+       public float GetHealth()
+       {
+        return health;
+       }
+       public float GetShield()
+       {
+        return shield;
+       }
+       public string SettName()
+       {
+        return name;
+       }
     }
 }
