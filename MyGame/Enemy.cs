@@ -37,8 +37,14 @@ namespace MyGame
        {
         return shield;
        }
-       public string SettName()
+       public string SetName(string Plname)
        {
+        string name = Plname;
+        int stringLenght = name.Length;
+        if (stringLenght > 8)
+        {
+            name = name.Substring(0, 8);
+        }
         return name;
        }
     }
