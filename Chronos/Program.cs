@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 using System.Threading;
 
 namespace Chronos
@@ -24,11 +25,13 @@ namespace Chronos
 
             Console.WriteLine($"{cr1}");
             Console.WriteLine($"{cr2}");
-            
-            
-            
 
+            string elpasedTimeCrono1 = String.Format("{0:0}.{1:00}{2:00}", 
+            cr1.Seconds, cr1.Milliseconds / 10, cr1.Microseconds / 100);
+            string elpasedTimeCrono2 = String.Format("{0:0}.{1:00}{2:00}", 
+            cr2.Seconds, cr2.Milliseconds / 10, cr2.Microseconds / 100);
 
+            System.Console.WriteLine($"{elpasedTimeCrono1}, {elpasedTimeCrono2}");
         }
     }
 }
