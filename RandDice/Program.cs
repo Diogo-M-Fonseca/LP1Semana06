@@ -11,7 +11,7 @@ namespace RandDice
             int maxValue = 0;
              while (n < int.Parse(args[0]))
             {
-                maxValue += random.Next(1, 6);
+                maxValue += random.Next(1, 7);
                 n++;
             }
             System.Console.WriteLine(maxValue);
