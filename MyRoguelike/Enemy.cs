@@ -48,24 +48,6 @@ namespace MyRoguelike
         }
         return name;
        }
-       internal void PickupPowerUp(PowerUp powerUp, float num)
-        {
-            if (powerUp == PowerUp.health)
-            {
-                health += num;
-                if (health > 100)
-                    health = 100;
-
-            }
-            else if (powerUp == PowerUp.shield)
-            {
-                shield += num;
-                if (shield > 100)
-                    shield = 100;
-
-            }
-            powerupGotten++;
-        }
-        internal static int GetPowerUpsGotten() => powerupGotten;
+    
     }
 }
